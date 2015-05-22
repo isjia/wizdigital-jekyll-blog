@@ -1,0 +1,20 @@
+{
+  "name": "home.wizdigital.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/isjia/wizdigital-jekyll-blog",
+  "authors": [
+    "Jenny Qian <isjia@163.com>"
+  ],
+  "description": "wizDigital homepage setup",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "startbootstrap-agency": "~1.0.4"
+  }
+}

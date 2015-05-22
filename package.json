@@ -1,0 +1,27 @@
+{
+  "name": "home.wizdigital.com",
+  "version": "0.0.0",
+  "description": "wizdigital homepage setup",
+  "main": "_site/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/isjia/wizdigital-jekyll-blog.git"
+  },
+  "author": "isJia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isjia/wizdigital-jekyll-blog/issues"
+  },
+  "homepage": "https://github.com/isjia/wizdigital-jekyll-blog#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-exec": "^0.4.6"
+  }
+}
