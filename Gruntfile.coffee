@@ -8,9 +8,13 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-copy"
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.loadNpmTasks "grunt-exec"
+  grunt.loadNpmTasks 'grunt-contrib-less'
 
   grunt.initConfig
-
+    less:
+      startbootstrap:
+        files:
+          "vendor/css/agency.css": "vendor/less/agency.less"
     copy:
       startbootstrap:
         files: [{
@@ -42,6 +46,9 @@ module.exports = (grunt) ->
         tasks: [
           "exec:jekyll"
         ]
+      less:
+          files: ["vendor/less/*.less"]
+          tasks: ["less", "exec:jekyll"]
 
     connect:
       server:
@@ -50,8 +57,11 @@ module.exports = (grunt) ->
           base: '_site'
           livereload: true
 
-  grunt.registerTask "build", [
+  grunt.registerTask "import", [
     "copy"
+  ]
+  grunt.registerTask "build", [
+    "less"
     "exec:jekyll"
   ]
 
