@@ -18,7 +18,9 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                // url: "././mail/contact_me.php",
+                url: "https://formkeep.com/f/5da4d5b705bf",
+                crossDomain: true,
                 type: "POST",
                 data: {
                     name: name,
