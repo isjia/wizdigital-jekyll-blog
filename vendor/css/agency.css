@@ -192,8 +192,11 @@ fieldset[disabled] .btn-xl.active {
   background-color: #dc3611;
 }
 @media (min-width: 768px) {
-  .navbar-default {
+  .home .navbar-default {
     background-color: transparent;
+  }
+  .navbar-default {
+    /*background-color: transparent;*/
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -730,4 +733,9 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #ef5431;
+}
+
+.modal-body p {
+  font-size: 18px;
+  line-height: 1.75em;
 }
