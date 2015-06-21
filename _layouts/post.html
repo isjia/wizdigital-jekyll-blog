@@ -1,15 +1,33 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<body id="page-top" class="index">
+  {% include nav.html %}
+    <!-- Portfolio Modal 1 -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="post container" id="portfolio">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>{{ page.title }}</h2>
+                        {% if page.sub-title %}
+                        <h4 class="item-intro text-muted">{{ page.sub-title }}</h4>
+                        {% endif %}
+                        <p class="item-intro text-muted">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+                        {% if page.img-header %}
+                        <img class="img-responsive img-centered" src="/img/posts/{{ page.img-header }}" alt="">
+                        {% endif %}
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+    {% include footer.html %}
+    {% include js.html %}
+</body>
+</html>
 
-</div>
