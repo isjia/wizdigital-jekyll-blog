@@ -10,7 +10,11 @@
             </div>
         </div>
         <div class="row">
-            {% for post in site.posts %}
+            {% assign post_num = 6 %}
+            {% if page.title == 'Insights' %}
+                {% assign post_num = site.posts.length %}
+            {% endif %}
+            {% for post in site.posts limit:post_num %}
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="{{ site.baseurl }}{{ post.url }}" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
