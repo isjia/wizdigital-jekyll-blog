@@ -12,10 +12,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="/vendor/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <!-- Custom CSS -->
     <link href="/vendor/css/agency.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.useso.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -145,6 +144,23 @@
         </div>
         <div class="row">
             
+            
+            
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="/marketing/2015/04/10/scenario-marketing/" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/img/posts/2015-04-10-1-preview.jpeg" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>场景营销，Show Your Respect</h4>
+                    <p class="text-muted">marketing</p>
+                </div>
+            </div>
+            
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="/web-design/2015/01/15/why-go-to-responsive/" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
@@ -217,21 +233,6 @@
                 <div class="portfolio-caption">
                     <h4>自媒体内容策划入门指导</h4>
                     <p class="text-muted">zi-media</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="/start-up/2014/08/01/how-to-raise-money-for-your-startup/" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="/img/posts/how-to-raise-money-for-your-startup-preview.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>如何赚到创业第一桶金</h4>
-                    <p class="text-muted">start-up</p>
                 </div>
             </div>
             
@@ -425,30 +426,54 @@
 
        <!-- Clients Aside -->
     <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="/img/logos/iweekly.jpg" class="img-responsive img-centered" alt="iWeekly 周末画报">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="/img/logos/shly.jpg" class="img-responsive img-centered" alt="上海旅游局">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="/img/logos/xinxilanlvcheng.jpg" class="img-responsive img-centered" alt="新西兰旅程">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="/img/logos/harmonywatch.jpg" class="img-responsive img-centered" alt="亨吉利世界名表中心">
-                    </a>
-                </div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="container">
+                          <div class="row">
+                              <div class="col-md-3 col-sm-6">
+                                  <img src="/img/logos/iweekly.jpg" class="img-responsive img-centered" alt="iWeekly 周末画报">
+                              </div>
+                              <div class="col-md-3 col-sm-6">
+                                  <img src="/img/logos/shly.jpg" class="img-responsive img-centered" alt="上海旅游局">
+                              </div>
+                              <div class="col-md-3 col-sm-6">
+                                  <img src="/img/logos/app.jpg" class="img-responsive img-centered" alt="新西兰旅程">
+                              </div>
+                              <div class="col-md-3 col-sm-6">
+                                  <img src="/img/logos/cmb.jpg" class="img-responsive img-centered" alt="招商银行">
+                              </div>
+                          </div>
+                      </div>
             </div>
+            <div class="item">
+              <div class="container">
+                          <div class="row">
+                              <div class="col-md-3 col-sm-6">
+                                  <img src="/img/logos/shanghaigm.jpg" class="img-responsive img-centered" alt="通用汽车">
+                              </div>
+                              <div class="col-md-3 col-sm-6">
+                                  <img src="/img/logos/shanghaidas.jpg" class="img-responsive img-centered" alt="上海大众汽车">
+                              </div>
+                              <div class="col-md-3 col-sm-6">
+                                  <img src="/img/logos/xinxilanlvcheng.jpg" class="img-responsive img-centered" alt="新西兰旅程">
+                              </div>
+                              <div class="col-md-3 col-sm-6">
+                                  <img src="/img/logos/cklogo.jpg" class="img-responsive img-centered" alt="CK">
+                              </div>
+                          </div>
+                      </div>
+            </div>
+          </div>
         </div>
+        
     </aside>
     
         <!-- Contact Section -->
@@ -716,9 +741,9 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <li><a href="#">加入我们</a>
                         </li>
-                        <li><a href="#">Terms of Use</a>
+                        <li><a href="/index/#contact">联系我们</a>
                         </li>
                     </ul>
                 </div>

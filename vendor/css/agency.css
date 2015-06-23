@@ -739,3 +739,16 @@ body {
   font-size: 18px;
   line-height: 1.75em;
 }
+.carousel-indicators {
+  bottom: 5px;
+}
+.carousel-indicators li {
+  border: 1px solid #828282;
+}
+.carousel-indicators .active {
+  background-color: #828282;
+}
+div.portfolio-caption {
+  height: 97px;
+  overflow: hidden;
+}
