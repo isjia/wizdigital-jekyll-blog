@@ -5,7 +5,7 @@ sub-title: "Who will be better than iPhone 6s?"
 date:   2015-09-24
 categories: "marketing"
 keywords: "marketing, mobile, smartphone, iphone, android"
-author: "焦凌珂"
+author: "Joey Jiao"
 img-header: "2015-09-24-1.png"
 img-preview: "2015-09-24-preview.jpg"
 ---
@@ -29,5 +29,5 @@ img-preview: "2015-09-24-preview.jpg"
 
 ![tables](/img/posts/2015-09-24-2.png)
 
-为知数科技CEO/焦凌珂
+为知数科技CEO / Joey Jiao
 独家稿件，转载请注明出处。
