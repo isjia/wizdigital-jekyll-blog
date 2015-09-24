@@ -196,7 +196,6 @@ fieldset[disabled] .btn-xl.active {
     background-color: transparent;
   }
   .navbar-default {
-    /*background-color: transparent;*/
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -221,7 +220,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('/img/header-bg.jpg');
+  background-image: url('../img/header-bg.jpg');
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
@@ -733,22 +732,4 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #ef5431;
-}
-
-.modal-body p {
-  font-size: 18px;
-  line-height: 1.75em;
-}
-.carousel-indicators {
-  bottom: 5px;
-}
-.carousel-indicators li {
-  border: 1px solid #828282;
-}
-.carousel-indicators .active {
-  background-color: #828282;
-}
-div.portfolio-caption {
-  height: 97px;
-  overflow: hidden;
 }
