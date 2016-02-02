@@ -1,3 +1,4 @@
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -220,7 +221,8 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
+  /*background-image: url('../img/header-bg.jpg');*/
+  background-image: url('http://7xqopk.com1.z0.glb.clouddn.com/header-bg.jpg');
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
@@ -549,7 +551,8 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
+  /*background-image: url('../img/map-image.png');*/
+  background-image: url('http://7xqopk.com1.z0.glb.clouddn.com/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
