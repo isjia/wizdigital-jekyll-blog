@@ -19,7 +19,7 @@ $(function() {
             }
             $.ajax({
                 // url: "././mail/contact_me.php",
-                url: "http://api.abitr.com/contactus/new",
+                url: "http://api.abitr.com/guestbook/5753e17b046460af22d03782/new",
                 crossDomain: true,
                 type: "POST",
                 data: {
