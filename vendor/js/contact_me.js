@@ -21,16 +21,16 @@ $(function() {
                 // url: "././mail/contact_me.php",
                 // url: "http://api.abitr.com/guestbook/5753e17b046460af22d03782/new",
                 url: "http://www.wizdigital.com/send",
+                type: "POST",                
                 crossDomain: true,
-                type: "POST",
                 data: {
                     name: name,
                     phone: phone,
                     user: email,
-                    text: 'from wizdigital contact form: ' + message + 'phone: ' + phone
+                    text: 'from wizdigital contact form: ' + message
                 },
                 cache: false,
-                success: function() {
+                success: function(data) {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -43,7 +43,7 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-                error: function() {
+                error: function(err) {
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
