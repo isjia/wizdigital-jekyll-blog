@@ -20,9 +20,8 @@ $(function() {
             $.ajax({
                 // url: "././mail/contact_me.php",
                 // url: "http://api.abitr.com/guestbook/5753e17b046460af22d03782/new",
-                url: "http://www.wizdigital.com/send",
-                type: "POST",                
-                crossDomain: true,
+                url: "../send",
+                type: "POST",
                 data: {
                     name: name,
                     phone: phone,
