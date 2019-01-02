@@ -507,7 +507,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" accept-charset="UTF-8" action="http://api.abitr.com/guestbook/5753e17b046460af22d03782/new" method="POST">
+                    <form name="sentMessage" id="contactForm" accept-charset="UTF-8" action="" method="POST">
                         <input type="hidden" name="utf8" value="✓">
                         <div class="row">
                             <div class="col-md-6">
@@ -793,10 +793,10 @@
     <!-- wx js share -->
 <script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
 <script>
-    url = location.href;
+    pageUrl = location.href;
     $.ajax({
         type: "get",
-        url: "https://www.wizdigital.com/api/wxjs",
+        url: "http://localhost:8085/api/wxjs"+"?url="+pageUrl,
         // dataType: "jsonp",
         // jsonp: "callback",
         // jsonpCallback: "success_jsonpCallback",
