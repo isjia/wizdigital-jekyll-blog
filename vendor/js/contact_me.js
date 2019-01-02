@@ -20,7 +20,7 @@ $(function() {
             $.ajax({
                 // url: "././mail/contact_me.php",
                 // url: "http://api.abitr.com/guestbook/5753e17b046460af22d03782/new",
-                url: "../send",
+                url: "https://www.wizdigital.com/api/send",
                 type: "POST",
                 data: {
                     name: name,
