@@ -20,10 +20,10 @@
     <!-- wx js share -->
 <script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
 <script>
-    url = location.href;
+    pageUrl = location.href;
     $.ajax({
         type: "get",
-        url: "https://www.wizdigital.com/api/wxjs",
+        url: "http://localhost:8085/api/wxjs"+"?url="+pageUrl,
         // dataType: "jsonp",
         // jsonp: "callback",
         // jsonpCallback: "success_jsonpCallback",
