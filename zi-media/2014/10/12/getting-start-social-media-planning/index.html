@@ -210,6 +210,43 @@
     <!-- Custom Theme JavaScript -->
     <script src="/vendor/js/agency.js"></script>
 
+    <!-- wx js share -->
+<script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+<script>
+    url = location.href;
+    $.ajax({
+        type: "get",
+        url: "https://www.wizdigital.com/api/wxjs",
+        // dataType: "jsonp",
+        // jsonp: "callback",
+        // jsonpCallback: "success_jsonpCallback",
+        success: function (data) {
+            wx.config({
+                appId: data.appId,
+                timestamp: data.timestamp,
+                nonceStr: data.nonceStr,
+                signature: data.signature,
+                jsApiList: data.jsApiList
+            });
+        },
+        error: function (data) {
+            console.log(data);
+        }
+    });
+    wx.ready(function () {
+        var shareData = {
+            title: 'wizDigital 为知数',
+            desc: 'wizDigital 为知数官网',
+            link: 'https://www.wizdigital.com',
+            imgUrl: 'https://www.wizdigital.com/img/wizLogo.png'
+        };
+        wx.onMenuShareAppMessage(shareData);
+        wx.onMenuShareTimeline(shareData);
+        // wx.onMenuShareQQ(shareData);
+        // wx.onMenuShareWeibo(shareData);
+    });
+</script>
+
     <!-- JiaThis Button BEGIN -->
     <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=" charset="utf-8"></script>
 
