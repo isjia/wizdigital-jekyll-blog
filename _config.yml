@@ -62,16 +62,16 @@ people:
     - title: github
       url: #
 
-- name: Nancy Tang
-  pic: nancy.tang
-  position: Lead Strategy
-  social:
-    - title: weibo
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+# - name: Nancy Tang
+#   pic: nancy.tang
+#   position: Lead Strategy
+#   social:
+#     - title: weibo
+#       url: #
+#     - title: facebook
+#       url: #
+#     - title: linkedin
+#       url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
